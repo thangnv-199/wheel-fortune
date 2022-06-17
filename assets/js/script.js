@@ -237,7 +237,6 @@ const app = {
 
       if (deleteBtn) {
         const index = +deleteBtn.dataset.index;
-        console.log(index);
         this.usersAwait.splice(index, 1);
         this.renderUsersAwait();
         this.drawWheel();
@@ -426,8 +425,8 @@ const app = {
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                   </svg>
                 </button>
-                <button data-index="${i}">
-                  <svg style="cursor: pointer" class="delete-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                <button data-index="${i}" class="delete-btn">
+                  <svg style="cursor: pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                       viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
